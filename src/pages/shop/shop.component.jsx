@@ -4,14 +4,13 @@ import { connect } from 'react-redux';
 
 import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
 import CollectionPageContainer from '../collection/collection.container';
-import { fetchCollectionStartAsync } from '../../redux/shop/shop.actions';
-
+import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
 
 class ShopPage extends React.Component {
 
     componentDidMount() {
-        const { fetchCollectionStartAsync } = this.props;
-        fetchCollectionStartAsync()
+        const { fetchCollectionsStart } = this.props;
+        fetchCollectionsStart()
         // const { updateCollections } = this.props
         // const collectionRef = firestore.collection('collections');
         
@@ -50,7 +49,7 @@ class ShopPage extends React.Component {
 }
 
 const mapDispatchtoProps = dispatch => ({
-    fetchCollectionStartAsync: () => dispatch(fetchCollectionStartAsync())
+    fetchCollectionsStart: () => dispatch(fetchCollectionsStart())
 })
 
 export default connect(null, mapDispatchtoProps)(ShopPage);
