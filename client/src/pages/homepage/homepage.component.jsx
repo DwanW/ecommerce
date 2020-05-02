@@ -5,8 +5,20 @@ import Directory from '../../components/directory/directory.component';
 
 const HomePage = () => (
     <HomePageContainer>
-        <Directory />
+            <Directory />
     </HomePageContainer>
 );
 
 export default HomePage;
+
+// profilier example(import from react)
+/* <Profiler id="Directory" onRender={(id, phase, actualDuration)=>{
+    console.log({
+        id,
+        phase,
+        actualDuration
+    })
+}}>
+  <Directory />
+</Profiler> */
+
