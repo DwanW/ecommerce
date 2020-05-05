@@ -13,6 +13,8 @@ const config = {
     measurementId: "G-RDES4FXEVJ"
 };
 
+firebase.initializeApp(config);
+
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
     const userRef = firestore.doc(`users/${userAuth.uid}`);
@@ -62,8 +64,6 @@ export const convertCollectionSnapshotToMap = (collections) => {
         return accumulator;
     }, {})
 }
-
-firebase.initializeApp(config);
 
 export const getCurrentUser = () => {
     return new Promise((res,rej)=> {
