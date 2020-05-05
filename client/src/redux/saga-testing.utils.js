@@ -1,6 +1,6 @@
 import { runSaga } from 'redux-saga'
 
-//record dispatched actions listened by sag
+//record dispatched actions listened by saga
 export async function recordSaga(saga, initialAction){
     const dispatched = [];
 

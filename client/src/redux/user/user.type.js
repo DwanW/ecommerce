@@ -13,4 +13,4 @@ const UserActionTypes = {
     SIGN_UP_FAILURE:'SIGN_UP_FAILURE'
 }
 
-export default UserActionTypes
+export default UserActionTypes;
