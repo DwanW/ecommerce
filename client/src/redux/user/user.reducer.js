@@ -3,7 +3,7 @@ import UserActionTypes from './user.type';
 const INITIAL_STATE = {
     currentUser: null,
     error: null
-}
+};
 
 const userReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
