@@ -11,7 +11,7 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 import { HeaderContainer, OptionLink, OptionsContainer, LogoContainer } from './header.styles';
 import { signOutStart } from '../../redux/user/user.actions';
 
-const Header = ({ currentUser, hidden, signOutStart }) => (
+export const Header = ({ currentUser, hidden, signOutStart }) => (
     <HeaderContainer>
         <LogoContainer to='/'>
             <Logo />

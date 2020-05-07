@@ -32,6 +32,7 @@ export const MenuItemContainer = styled.div`
     height: 200px;
   }
 `;
+MenuItemContainer.displayName = 'MenuItemContainer';
 
 export const BackgroundImageContainer = styled.div`
   width: 100%;
@@ -41,6 +42,7 @@ export const BackgroundImageContainer = styled.div`
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
   transition: transform 0.7s cubic-bezier(0.25, 0.45, 0.45, 0.95)
 `;
+BackgroundImageContainer.displayName = 'BackgroundImageContainer';
 
 export const ContentContainer = styled.div`
   height: 90px;

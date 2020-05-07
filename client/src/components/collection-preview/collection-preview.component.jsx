@@ -5,7 +5,7 @@ import CollectionItem from '../collection-item/collection-item.component';
 import { CollectionPreviewContainer, TitleContainer, PreviewContainer } from './collection-preview.styles';
 
 
-const CollectionPreview = ({
+export const CollectionPreview = ({
     title,
     items,
     history,
