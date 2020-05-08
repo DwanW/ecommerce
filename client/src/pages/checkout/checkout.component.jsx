@@ -8,7 +8,7 @@ import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selector
 
 import { CheckoutPageContainer, CheckoutHeaderContainer, HeaderBlock, TotalContainer, TestTextContainer } from './checkout.styles';
 
-const CheckoutPage = ({ cartItems, cartTotal }) => (
+export const CheckoutPage = ({ cartItems, cartTotal }) => (
     <CheckoutPageContainer>
         <CheckoutHeaderContainer>
             <HeaderBlock>
